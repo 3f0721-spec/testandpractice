@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>勤務條陳產生系統</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>勤務條陳產生系統</h1>
+
+<label>案件類型</label>
+<select id="caseType"></select>
+
+<label>發生地點</label>
+<select id="location"></select>
+
+<label>到場情形</label>
+<select id="arrival"></select>
+
+<label>案情研判</label>
+<select id="analysis"></select>
+
+<label>傷勢確認</label>
+<select id="injury"></select>
+
+<label>告訴意願</label>
+<select id="complaint"></select>
+
+<label>依法偵辦</label>
+<select id="law"></select>
+
+<label>監視蒐證</label>
+<select id="evidence"></select>
+
+<button onclick="generateReport()">
+產生條陳
+</button>
+
+<textarea id="output"></textarea>
+
+<button onclick="copyText()">
+複製內容
+</button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
